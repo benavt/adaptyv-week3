@@ -19,14 +19,14 @@ FONT=args.font_dir
 for name,file in [('DejaVu','DejaVuSans.ttf'),('DejaVu-Bold','DejaVuSans-Bold.ttf'),('DejaVu-Oblique','DejaVuSans.ttf'),('DejaVuMono','DejaVuSansMono.ttf')]:pdfmetrics.registerFont(TTFont(name,str(FONT/file)))
 pdfmetrics.registerFontFamily('DejaVu',normal='DejaVu',bold='DejaVu-Bold',italic='DejaVu-Oblique',boldItalic='DejaVu-Bold')
 styles=getSampleStyleSheet()
-styles.add(ParagraphStyle(name='BodyReview',fontName='DejaVu',fontSize=9.2,leading=13.4,spaceAfter=7))
-styles.add(ParagraphStyle(name='Candidate',fontName='DejaVu',fontSize=9,leading=11.4,spaceAfter=7))
+styles.add(ParagraphStyle(name='BodyReview',fontName='DejaVu',fontSize=10,leading=14,spaceAfter=7))
+styles.add(ParagraphStyle(name='Candidate',fontName='DejaVu',fontSize=10,leading=13.5,spaceAfter=7))
 styles.add(ParagraphStyle(name='TitleReview',fontName='DejaVu-Bold',fontSize=21,leading=27,textColor=colors.HexColor('#14394a'),spaceAfter=15))
 styles.add(ParagraphStyle(name='H2Review',fontName='DejaVu-Bold',fontSize=13,leading=17,spaceBefore=12,spaceAfter=9,keepWithNext=True,textColor=colors.HexColor('#14394a')))
 styles.add(ParagraphStyle(name='H3Review',fontName='DejaVu-Bold',fontSize=10,leading=13,spaceBefore=8,spaceAfter=6,keepWithNext=True))
-styles.add(ParagraphStyle(name='CellReview',fontName='DejaVu',fontSize=7,leading=9.5,spaceAfter=0))
+styles.add(ParagraphStyle(name='CellReview',fontName='DejaVu',fontSize=8,leading=10.5,spaceAfter=0))
 styles.add(ParagraphStyle(name='ReferenceReview',fontName='DejaVu',fontSize=7.8,leading=10.5,spaceAfter=5))
-styles.add(ParagraphStyle(name='CodeReview',fontName='DejaVuMono',fontSize=7.5,leading=10,spaceBefore=4,spaceAfter=12))
+styles.add(ParagraphStyle(name='CodeReview',fontName='DejaVuMono',fontSize=8.5,leading=11.5,spaceBefore=4,spaceAfter=12))
 W=528
 source=(PACKAGE/'manuscript.md').read_text()
 # Normalize only display punctuation, retaining scientific letters and values.

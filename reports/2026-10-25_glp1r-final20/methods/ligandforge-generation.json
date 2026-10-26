@@ -1,0 +1,217 @@
+{
+  "original_source_sha256": "91a0753c03cd49c421c39de84b128155ac9ac7ee6e019af7024b05f829bdc22a",
+  "original_scientific_record": {
+    "schema_version": 1,
+    "record_kind": "retrospective_generation_provenance_addendum",
+    "evidence_received_date": "2026-10-16",
+    "provider": "LigandAI by Ligandal",
+    "interface": "GLP1R Challenge Lab",
+    "source_url": "https://ligandai.com/challenge/glp1r",
+    "interface_attribution": "User describes Andre Watson\u2019s Challenge Lab interface; this is source attribution, not independently verified authorship.",
+    "generation": {
+      "display_name": "Generation #1",
+      "display_suffix": "73e20b3f",
+      "job_uuid": "31e52bf6-d21e-448a-8633-da4073e20b3f",
+      "offer": "glp1r-week3-offer-v1",
+      "status_as_displayed": "completed",
+      "peptides_requested": 1000,
+      "started_display": "Oct 15, 2026 at 03:00 PM EDT",
+      "job_created_at_csv_preamble": "2026-10-15T19:00:44.036Z",
+      "exported_at_csv_preamble": "2026-10-16T13:36:01.959Z",
+      "api_contract_literal": "egfr-results-v1",
+      "completion_timestamp": null
+    },
+    "submitted_settings": {
+      "engine": "LigandForge",
+      "generator_model": "v6.5.21",
+      "binding_length_range_aa": [
+        20,
+        60
+      ],
+      "construct": [
+        {
+          "position": 1,
+          "role": "binding",
+          "length_range_aa": [
+            20,
+            60
+          ]
+        },
+        {
+          "position": 2,
+          "role": "premade",
+          "sequence": "GSGSGS",
+          "fixed": true,
+          "length_aa": 6
+        },
+        {
+          "position": 3,
+          "role": "linker",
+          "length_aa": 4
+        }
+      ],
+      "guidance_heads": [
+        "Cell-free expression"
+      ],
+      "quality_guided_sampling": false,
+      "charge_window": null,
+      "recombinant_only_residues": true,
+      "ec_domain_trimming": false,
+      "paralog_reference_genes": [],
+      "ph_objective": null,
+      "evidence_scope": "Saved submitted quote in Generation #1 record, not current design-form settings"
+    },
+    "submitted_target": {
+      "gene": "GLP1R",
+      "uniprot": "P43220",
+      "structure_label_in_record": "6X18",
+      "assembly_chains": [
+        "A"
+      ],
+      "hotspot_chain": "A",
+      "numbering_frame_token_literal": "pdb",
+      "display_numbering_description": "UniProt numbering (6X18, renumbered to that frame)",
+      "structure_sha256_reported": "f139f3eeb6566e30078719ac83d4a7fa14db661be149389b5e0f12dd22c66647",
+      "byte_identity_claim": "Saved record states byte-identical to receptor served by challenge at capture time; source structure bytes were not attached and identity was not independently rehashed."
+    },
+    "submitted_pocket": {
+      "targeting_mode": "Single site",
+      "targeting_strategy": "pocket targeted",
+      "site": 1,
+      "chain": "A",
+      "residues": [
+        141,
+        144,
+        145,
+        148,
+        152,
+        190,
+        194,
+        197,
+        201,
+        230,
+        233,
+        234,
+        237,
+        241,
+        298,
+        299,
+        300,
+        306,
+        309,
+        310,
+        313,
+        372,
+        380,
+        384,
+        387,
+        388,
+        391
+      ],
+      "displayed_residues_conditioned_on": 27,
+      "arm_length_range_aa_as_displayed": [
+        20,
+        40
+      ],
+      "pocket_expansion_radius_angstrom": 0,
+      "numbering_frame": "submitted receptor / display UniProt frame; token pdb retained separately"
+    },
+    "featurizer_record": {
+      "pocket_source": "pocket_extractor",
+      "featurizer_version": "v6.5.13",
+      "receptor_chain": "A",
+      "structure_label": "LOADED",
+      "structure_sha256_reported": "d8d994d4ae5502344ac9138d1c62af016d10f95d4f63972ef633178a7266b5ff",
+      "pocket_residue_count": 14,
+      "residue_indices": [
+        60,
+        61,
+        76,
+        77,
+        78,
+        79,
+        80,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111
+      ],
+      "numbering_frame": "LOADED structure indices; not the submitted receptor numbering",
+      "pocket_cache_key": "6e706cd335a9659d",
+      "rows_scanned_as_reported": 1000,
+      "all_rows_share_pocket_and_structure_as_reported": true,
+      "evidence_scope": "PDF reports digest/indices/row consistency; CSV independently exposes count14 and pocket_extractor but has no structure-digest or residue-index columns"
+    },
+    "folding_context": {
+      "parent_run": "campaigns/glp1r-ligandforge-boltz2-exact/runs/2026-10-15_ligandforge-exact_001",
+      "method": "Boltz2-Exact",
+      "target": {
+        "name": "human GLP1R",
+        "uniprot": "P43220-1",
+        "residues": [
+          24,
+          432
+        ],
+        "sequence": "RPQGATVSLWETVQKWREYRRQCQRSLTEDPPPATDLFCNRTFDEYACWPDGEPGSFVNVSCPWYLPWASSVPQGHVYRFCTAEGLWLQKDNSSLPWRDLSECEESKRGERSSPEEQLLFLYIIYTVGYALSFSALVIASAILLGFRHLHCTRNYIHLNLFASFILRALSVFIKDAALKWMYSTAAQQHQWDGLLSYQDSLSCRLVFLLMQYCVAANYYWLLVEGVYLYTLLAFSVLSEQWIFRLYVSIGWGVPLLFVVPWGIVKYLYEDEGCWTRNSNMNYWLIIRLPILFAIGVNFLIFVRVICIVVSKLKANLMCKTDIKCRLAKSTLTLIPLLGTHEVIFAFVMDEHARGTLRFIKLFTELSFTSFQGLMVAILYCFVNNEVQLEFRKSWERWRLEHLHIQRDSS",
+        "sequence_sha256": "c97e82c3f1301256d2802e2b01e1f72f2880a2e62d26f4c8bd73752ca296a8ed",
+        "construct": "untagged WT assay-range reference; proprietary stabilizing mutations undisclosed",
+        "source": "project frozen R_assay_reference409 sequence"
+      },
+      "binder_chain": "A",
+      "receptor_chain": "B",
+      "hotspots": "none; unconstrained complex prediction",
+      "relationship": "Separate WT409 reference used for refolding; no identity assertion to either reported generation structure",
+      "original_fasta_sha256": "161d4a6ddc093f388ec891990a651ca1dcc0f55c8e2f6c058e58576103c51872",
+      "ranking": {
+        "method": "ipSAE",
+        "pae_cutoff_angstrom": 10,
+        "distance_cutoff_angstrom": 15,
+        "chain_pair": [
+          "A",
+          "B"
+        ],
+        "statistic": "max of directional ipSAE (Type=max)",
+        "order": "descending; ties by numeric Design ID",
+        "top_fraction": 0.1,
+        "top_n": 100,
+        "require_all_designs": 1000
+      }
+    },
+    "interpretation_limits": [
+      "The submitted 27-residue pocket and the extracted 14-residue pocket use different structure digests and numbering frames; no residue-to-residue mapping or numerical subtraction is valid without the structure bytes and explicit alignment.",
+      "Saved arm20-40 and submitted binding20-60 are separate displayed fields; the addendum preserves both and does not resolve their disagreement.",
+      "CSV timestamps are retained verbatim; row created_at values are about4h after the saved job creation and later than original folding completion; no corrected timestamp or completion time is inferred.",
+      "CSV rank is export position, not Boltz2-Exact ipSAE rank.",
+      "Sequence-property values are provider estimates, may apply to generated native core before fixed-tail assembly, and are not experimental measurements; N-end-rule minutes are not serum half-life.",
+      "Generated sequences, predicted complex quality and attention views do not establish intended-pocket binding, agonism, or experimental affinity.",
+      "The provenance addendum applies to original LigandForge candidates and their lineage; AP Novo children retain their own generation method and frozen settings."
+    ],
+    "sources": [
+      {
+        "original_filename": "GLP1R Challenge Lab \u00b7 LigandAI by Ligandal.pdf",
+        "path": "sources/GLP1R Challenge Lab \u00b7 LigandAI by Ligandal.pdf",
+        "sha256": "a27380edbd3bc33977ea40e8dcf46f3b1184faeea3be57d6a0483d131d6153dc",
+        "bytes": 687932,
+        "authority": "user-supplied saved Challenge Lab evidence; not independently retrieved from provider"
+      },
+      {
+        "original_filename": "glp1r_generation_31e52bf6_all-1000_20261016T1336Z.csv",
+        "path": "sources/glp1r_generation_31e52bf6_all-1000_20261016T1336Z.csv",
+        "sha256": "dd5fb11b0e5e797ec4e9361e92c83169997b5e0f171a69539804b1bd40ce56f4",
+        "bytes": 244873,
+        "authority": "user-supplied saved Challenge Lab evidence; not independently retrieved from provider"
+      }
+    ],
+    "actions": {
+      "documentation_only": true,
+      "external_api_requests": 0,
+      "paid_llm_calls": 0,
+      "compute_submissions": 0,
+      "scientific_inputs_or_rankings_replaced": false
+    }
+  },
+  "publication_transform": "Infrastructure paths normalized; scientific settings, source/weight hashes and version identities retained"
+}

@@ -1,0 +1,7 @@
+{
+  "original_source_sha256": "40d09195a7fee6d7f0b1c106eafb652444b8e9f5da7e86899cf1711b89bd9775",
+  "publication_sha256": "d99f5e074afa71840ee327509434cff2066fe9bba25468bf2e18c3f175679312",
+  "slides": 40,
+  "transformation": "Speaker-note infrastructure paths normalized; every slide XML and embedded image byte preserved",
+  "rendered_slides_verified_before_note_normalization": 40
+}

@@ -1,0 +1,134 @@
+{
+  "original_source_sha256": "ef20039957351b4836093d0ee9e593008692cbde62b0e3db26b1c0d3c3060d71",
+  "original_scientific_record": {
+    "schema_version": 1,
+    "project_id": "adaptyv-week3",
+    "campaign_id": "glp1r-ligandforge-boltz2-exact",
+    "run_id": "2026-10-15_ligandforge-exact_001",
+    "created_at": "2026-10-15T19:10:31.723483+00:00",
+    "parents": [],
+    "recipe": {
+      "stages": {
+        "01_staging": {
+          "method": "preserve LigandForge originals; explicit GLP1R409 target; frozen native settings",
+          "execution": "local"
+        },
+        "02_design": {
+          "method": "CPU MSA and native features then cache-only Boltz2-Exact",
+          "execution": "mimas",
+          "submission": "authorized by user request on 2026-10-15"
+        },
+        "03_filtering": {
+          "method": "pinned ipSAE, PAE10/dist15, A/B Type=max",
+          "execution": "mimas CPU"
+        },
+        "04_analysis": {
+          "method": "complete-population ranking; top 100/1000 with full evidence",
+          "execution": "mimas CPU"
+        }
+      }
+    },
+    "settings": {
+      "engine": "Boltz2-Exact",
+      "native_settings": {
+        "revision": "v001",
+        "method": "Boltz2_exact",
+        "seed": 101,
+        "recycling_steps": 3,
+        "sampling_steps": 200,
+        "diffusion_samples": 1,
+        "max_msa_seqs": 8192,
+        "binder_chain": "A",
+        "target_chain": "B",
+        "binder_msa": "empty",
+        "target_msa_profile": "colabfold152_uniref30_2202_s8_noenv",
+        "templates": "none",
+        "msa_server": false
+      },
+      "target": {
+        "name": "human GLP1R",
+        "uniprot": "P43220-1",
+        "residues": [
+          24,
+          432
+        ],
+        "sequence": "RPQGATVSLWETVQKWREYRRQCQRSLTEDPPPATDLFCNRTFDEYACWPDGEPGSFVNVSCPWYLPWASSVPQGHVYRFCTAEGLWLQKDNSSLPWRDLSECEESKRGERSSPEEQLLFLYIIYTVGYALSFSALVIASAILLGFRHLHCTRNYIHLNLFASFILRALSVFIKDAALKWMYSTAAQQHQWDGLLSYQDSLSCRLVFLLMQYCVAANYYWLLVEGVYLYTLLAFSVLSEQWIFRLYVSIGWGVPLLFVVPWGIVKYLYEDEGCWTRNSNMNYWLIIRLPILFAIGVNFLIFVRVICIVVSKLKANLMCKTDIKCRLAKSTLTLIPLLGTHEVIFAFVMDEHARGTLRFIKLFTELSFTSFQGLMVAILYCFVNNEVQLEFRKSWERWRLEHLHIQRDSS",
+        "sequence_sha256": "c97e82c3f1301256d2802e2b01e1f72f2880a2e62d26f4c8bd73752ca296a8ed",
+        "construct": "untagged WT assay-range reference; proprietary stabilizing mutations undisclosed",
+        "source": "project frozen R_assay_reference409 sequence"
+      },
+      "hotspots": "none; unconstrained complex prediction",
+      "binder": "all supplied residues retained, including GSGSGS tails; no inferred cyclization or disulfide constraints",
+      "models": 1000,
+      "resources": {
+        "cpu_preparation": {
+          "cpus": 16,
+          "mem": "220G",
+          "time": "04:00:00"
+        },
+        "cpu_validation": {
+          "cpus": 8,
+          "mem": "32G",
+          "time": "01:00:00"
+        },
+        "gpu": {
+          "tasks": 40,
+          "designs_per_task": 25,
+          "concurrency": 2,
+          "gpus_per_task": 1,
+          "cpus": 8,
+          "mem": "32G",
+          "time": "08:00:00"
+        },
+        "accept_score": {
+          "cpus": 8,
+          "mem": "32G",
+          "time": "04:00:00"
+        }
+      },
+      "ranking": {
+        "method": "ipSAE",
+        "pae_cutoff_angstrom": 10,
+        "distance_cutoff_angstrom": 15,
+        "chain_pair": [
+          "A",
+          "B"
+        ],
+        "statistic": "max of directional ipSAE (Type=max)",
+        "order": "descending; ties by numeric Design ID",
+        "top_fraction": 0.1,
+        "top_n": 100,
+        "require_all_designs": 1000
+      },
+      "source_fasta_sha256": "161d4a6ddc093f388ec891990a651ca1dcc0f55c8e2f6c058e58576103c51872",
+      "ipSAE_source": {
+        "repository": "https://github.com/DunbrackLab/IPSAE",
+        "commit": "6174cf9e71cb1bd660cc805856a18c4871a6dec3",
+        "sha256": "10cf9b08c68c91e06cb28526cf2026f47a3980c9048fd3226d13e3304eaf1c27"
+      },
+      "scientific_workflow_pin": "unchanged"
+    },
+    "files_sha256": {
+      "campaign.json": "92ce8a73b2a28bfaea3f788c519bf0d48eab45d232899aa77fa7258c28030c08",
+      "payload/REVIEW.md": "cffa89c39a1e198130e6b7d8a917cd9a4f7081e10fffa99dc8c75f7eaf59d480",
+      "payload/campaign-inputs.json": "15df5faacbd36a5b808ac14d7390233c576e28700fded26ae2a72764b4d2b741",
+      "payload/campaign_workflow.py": "53575f177ad628c3eadbfd3bd97a089750dd1d24966bf0ec8094f64c3986f0dc",
+      "payload/cpu-acceptance.sbatch": "911e56ea1937d0876219aba2b2c553d96bf6e59a2f90a1874fbef32fc9615ed9",
+      "payload/cpu-preparation.sbatch": "f2668c54879dea01d7791cac449eb5eebafa312bba51e5a194fcc8bcf37b6bc8",
+      "payload/cpu-validation.sbatch": "f8cb1776ccc38e5a76f76fc924103a9cc7b6bbe83eee87d439836f5ff4e6fe8f",
+      "payload/ipsae-source.json": "52797b818fdc1f0b345a56cc6a03afb859bad441d04eed6d2197c0e3fa401c95",
+      "payload/ipsae.py": "10cf9b08c68c91e06cb28526cf2026f47a3980c9048fd3226d13e3304eaf1c27",
+      "payload/ligandforge-original.fasta": "161d4a6ddc093f388ec891990a651ca1dcc0f55c8e2f6c058e58576103c51872",
+      "payload/runtime-template.json": "2eb8012b8f060a4b232a31e1cf9443acee81466afa279e959d96b1c23c46c75f",
+      "payload/settings.json": "a5b5630f29795576d56972a4d7ebdaea475c9ea3bee09a40fecb583f4d5dd5ad",
+      "payload/structure_io.py": "c4e3dd034a7c1f30a6496edf5cfe0659142e9c65eb0ec4c10a437b345526c396",
+      "payload/support.py": "41da517d0c3175b6db773d3e09261ac73067f902f65ee2b2a15342dd2f3613c7",
+      "payload/target.fasta": "dd493188cbd69cdfb71287327aa935ee005299bb95a459094d21aa9e6adfcee4",
+      "project.json": "6a351d95ffb46e056fc0cd76de195fc681c75e074800704b3f4bc7e5dcf7bc9b",
+      "settings.json": "ef5d324b2c0083e86e44b91362e1cc8c07fc17282dbcc61132d9045db1c74cc0",
+      "workflow.lock.json": "0ad286274c383cb6e665d415364df0803b1b7a405844577e37d704d5ade62921"
+    },
+    "scientific_inputs_validated": false
+  },
+  "publication_transform": "Infrastructure paths normalized; scientific settings, source/weight hashes and version identities retained"
+}

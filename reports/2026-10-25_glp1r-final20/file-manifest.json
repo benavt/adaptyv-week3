@@ -1,0 +1,793 @@
+{
+  "publication": "20selected scientific evidence package",
+  "copied_and_transformed_source_files": [
+    {
+      "path": "models/LK_P050_07/boltz2.cif",
+      "sha256": "95fbf8fd1df93b530aa3e8891105ce33fa14c8f4927c88bc66508b78429a8cf4",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P050_07/deltaforge-input.pdb",
+      "sha256": "d9b53c1f12d16d34a339b552c1949f02946de3defb87e31d4871c546eac5dd93",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P050_07/apnovo-generation.cif",
+      "sha256": "abb3641661c741b3595fb4c6c5c2c2bb29fe75f42868d7ccbe884e983b9894eb",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S11_02_089/standalone-exact-display.pdb",
+      "sha256": "33a626296d1404a15d5b43fc0af2d090024dd0f999abdc0c455da40d2747c0cc",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S11_02_089/generator.cif",
+      "sha256": "5c945ba2f8b55a7de827da90fce404e2a708162945915853fe933eca5e0a8ac9",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/Design_280/standalone-exact-display.pdb",
+      "sha256": "cd01c89fbf40d0e577c10f20c2afa96c3deef09880d6c761314a1c5e9898bd4f",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P063_07/boltz2.cif",
+      "sha256": "bf7d45251c1117f8d3d61acb7256b8a07e9e9f305d30b8546530fea3ee6c1d82",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P063_07/deltaforge-input.pdb",
+      "sha256": "a469a2fb5f07b3ed5af8e2f935fb82e41afd2e11ab7d233ddd419853c0a5e2e5",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P063_07/apnovo-generation.cif",
+      "sha256": "c3f0ae072962d3cf9ecf30243b485496f10398c3d5b2a6033e513e12f31ed72b",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S08_03_083/standalone-exact-display.pdb",
+      "sha256": "d20828f265dce8b2961c62530b400dd6dff7cc762eb2f9ea3633d08208b36846",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S08_03_083/generator.cif",
+      "sha256": "d186554ae1007732daee855a3fa9f4d73bcd1b411996c914f20b270ba5ceec1b",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P109_06/boltz2.cif",
+      "sha256": "a0e496c74c9d41a7b0d164721515cdd9ec2ae2290b85ed8940015459349c3bde",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P109_06/deltaforge-input.pdb",
+      "sha256": "7484b0825ec7aec0de4c7019977550a206e37cdd9575d771296e8352dc1525be",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P109_06/apnovo-generation.cif",
+      "sha256": "4e3bd136da9b9fadc77b3951677bfe6a823e745419b136460fa6524c7e656abe",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S08_00_099/standalone-exact-display.pdb",
+      "sha256": "a10fffb3b02454090010c8d34d9df5cb042cc964e848dee91c8aeebc0aaf7235",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S08_00_099/generator.cif",
+      "sha256": "a94622e71e5a09baed12dbe478e64d64d99011ba2112e43e9e1e3a537598a9b8",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/Design_520/boltz2.cif",
+      "sha256": "7fd320306aed5a85641570722ff84cd462fda1083c04fdfed46a84d7dba53376",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/Design_520/deltaforge-input.pdb",
+      "sha256": "07fe8c2c25386e5bf495c2ebb636fcbaa6c4072673b2465beed511921dbf4beb",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P088_08/boltz2.cif",
+      "sha256": "f96dc2a804c24cfdd89333ea654759c4338d783d7cd824bf3eac52c9b1e596cb",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P088_08/deltaforge-input.pdb",
+      "sha256": "cd9a4b745d9b42a929bcc916ea5e4a624933d81ddf3c5a07f4b7eb7aca8b6cb0",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P088_08/apnovo-generation.cif",
+      "sha256": "3a185b5a4c4b86c043dfeb43d7487167e266e9b5012c4070480d58063193a6ce",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S11_03_093/standalone-exact-display.pdb",
+      "sha256": "c0071a5b08b94bbbe0964635d3ac84d6493fa532d71c3d8df45a43af5bf9530f",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S11_03_093/generator.cif",
+      "sha256": "7086a79e4d2b25e11734f93b8ccff414ef05e660daa24ec5eb6e832693bff987",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P050_03/boltz2.cif",
+      "sha256": "3501ffce18d848606153666f7594ee3d1d85e2ee6a1013f2d0ba58f4c5eadd01",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P050_03/deltaforge-input.pdb",
+      "sha256": "d93360b3c50b852e9269bba6b1707f687b0257ac127e970d1704a0ce605dddcc",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P050_03/apnovo-generation.cif",
+      "sha256": "da805f8a18842fbb3db33d003cd96e4418329e1c47aaa73cff0b03e4a87d5f6c",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/Design_973/boltz2.cif",
+      "sha256": "2f7a42d2398a58ae72f865082414e8bdeb86aaf5ff428f9d3caa8abf2f0ba554",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/Design_973/deltaforge-input.pdb",
+      "sha256": "1ac777d39b5ba7521aaaf2b08830ab6b3907f5dde3336ba94396301931d3cfbe",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P157_08/boltz2.cif",
+      "sha256": "f9efc503df7abaf13c7f3bbea2af38254a6c142412d6ad515e3f59ce28a7bf7b",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P157_08/deltaforge-input.pdb",
+      "sha256": "80c7ec071ec58a7464df6de072e9017cfbebd6871775205cf042ad116cb3169b",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P157_08/apnovo-generation.cif",
+      "sha256": "2b723ee336a3a66b203777864d2c9fd288a6796214af4025b9569b5183c584e0",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S10_02_023/standalone-exact-display.pdb",
+      "sha256": "2508cebf214f1a9c1e086a92a31c37e01c012a2322b14ef76c39c626097ba4e1",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S10_02_023/generator.cif",
+      "sha256": "a2aa05057701e99d19d2ed0a40dcb82cdab8d56dba0f1ffcb355dde8bc18bfaa",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/Design_414/standalone-exact-display.pdb",
+      "sha256": "4efa049c1b3f058a2871c338e555e4ad79d0df44606310a1dfcb9828fe2a0074",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P069_04/boltz2.cif",
+      "sha256": "54a9810d3ee59227525a958e2f805ebc56a7d62119dee48fb1d16c141ec808c6",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P069_04/deltaforge-input.pdb",
+      "sha256": "4c929315bb090f2d7c37c8f337b315073e2b18e7ece616adb0af0077567d3124",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P069_04/apnovo-generation.cif",
+      "sha256": "79f3ea7a7c0a7764609077943c9d26aab8e84c70fe6ec9dff481672959428d9d",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P024_03/boltz2.cif",
+      "sha256": "4fc14c3d8396a86eafcb4fcc7dfea43f4735fa0f1a97b442e4e297d2c289df24",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P024_03/deltaforge-input.pdb",
+      "sha256": "dfb21db83d1128f2f2827422ca25d2545fcaf850845839b44f89539a3731148b",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P024_03/apnovo-generation.cif",
+      "sha256": "d7a9b3996e7e32bd9cbdfee51658c758e9107fc95ee6e53b1fa3b23ecc8922a7",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S11_00_040/standalone-exact-display.pdb",
+      "sha256": "4bfc65133e93d780ad1aad718e7827d6ba1fbc82b0da11aa257ac90f30f0817a",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S11_00_040/generator.cif",
+      "sha256": "4bf6b218944af7d38863e8105d4b53735d293c0d50969e7d7817a008af0bfcee",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/Design_613/standalone-exact-display.pdb",
+      "sha256": "45f959dfc2844f56fce4f564ccd71a5db6030b5f721bd2fbcec9c3c0d1be388f",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/Design_994/boltz2.cif",
+      "sha256": "23fffdccdb4b68471c9b243b9ef27714eb55e616644fe4e2f98483c3879579c6",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/Design_994/deltaforge-input.pdb",
+      "sha256": "195a001cf363948c1aea8e3d2c9802985e9597371143a7269596f0fd83555e92",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P012_08/boltz2.cif",
+      "sha256": "05354a48a6723a5e62d6a6d0700be933508e8986daad01fb8900ad828620a74d",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P012_08/deltaforge-input.pdb",
+      "sha256": "970fc5302535823051074742639b19f84f496d87c9928ba0760abc7cfa16a295",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P012_08/apnovo-generation.cif",
+      "sha256": "cc1a56b9d46d26349880dde80d20f78d3e3bfd326db078ace24e9a2320620ee9",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S08_00_042/standalone-exact-display.pdb",
+      "sha256": "586dbe8949136305e5e0d5d43c665bd5ed5d95548b9f5bc863aed4430cf0b282",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S08_00_042/generator.cif",
+      "sha256": "7b512af1937e4c7e65c796c47d3fe7f2c3a07fb057b645eefb6655bf46811c6b",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/Design_991/standalone-exact-display.pdb",
+      "sha256": "4f8a662dc2ed593fd5dee32e1629c724986d9aed7a1595f5fe62f82875a40b30",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P062_00/boltz2.cif",
+      "sha256": "dce45c8b68d53fc8283de14d7c4b58921b395dc5b766260bc32bf5e75240d8f3",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P062_00/deltaforge-input.pdb",
+      "sha256": "f7d9595940d943470113693a9381f7b685598b8ba2b8ab0f1feddd5d3092ab4e",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P062_00/apnovo-generation.cif",
+      "sha256": "9008653a66ff8a572806a4085c29b01d5e0acabfbcff19fdb0d803955167fbff",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S10_04_045/standalone-exact-display.pdb",
+      "sha256": "d856a93e192b48e2a32d5571ecf6527fc3c48d52690ec2f3257f8def3feecf50",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S10_04_045/generator.cif",
+      "sha256": "1c9ba80c4095d0317b129f308959d64e96c9c7f5f8a767ffa10932c59762ac9b",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/Design_440/boltz2.cif",
+      "sha256": "472cb2faf83cc57ac6a6924c72a44f06f02ec0d85e3226147c08b51bc594cb21",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/Design_440/deltaforge-input.pdb",
+      "sha256": "700bc40ed25e70ba088da4728f31148ae15d80d859a0f2923c3252627429a0d6",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P141_07/boltz2.cif",
+      "sha256": "057c941f900347a58c03754e4ed3405a7187730b30c880c5e8fa4ca13920b391",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P141_07/deltaforge-input.pdb",
+      "sha256": "6cd56c4f82f7f8db0c47931f50c2f85bc7cd0fe1513fb44df4ca27ff60f0de02",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P141_07/apnovo-generation.cif",
+      "sha256": "e480d8f90bf00852edb33cc0c93f84ee8119134b8edecda3198999e50e1ecb86",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S09_03_086/standalone-exact-display.pdb",
+      "sha256": "175108ef3bc179b82adfa75b41565eaa66f1f1ba783f392bc468013d898e1deb",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S09_03_086/generator.cif",
+      "sha256": "fa72db1f331d09537cffce2001bb412196ffc642e8cfd2c680f2170b91397a59",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P002_05/boltz2.cif",
+      "sha256": "b42fd0d87e7deba61c440007ffdbe63e077f7982ac2d552a73dd74fd7a92bd52",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P002_05/deltaforge-input.pdb",
+      "sha256": "2cdbeaadafb5b0d2c96000faac08312915566af30e7bc4b1c57d5ce84f861e5d",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P002_05/apnovo-generation.cif",
+      "sha256": "e930216edc30c3bf609478444adc5484e220f5107d789634200a81f1d37b9191",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S10_03_014/standalone-exact-display.pdb",
+      "sha256": "a29d8795d918604fd505028a39cbe0c0a957b1f21303e806fb14da3da6fb71a1",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S10_03_014/generator.cif",
+      "sha256": "87247a04cd6370c6c108d675b046a8320581f4cf8bf111d5b3ce57d7964e6c3a",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/Design_913/standalone-exact-display.pdb",
+      "sha256": "694e9737dcd0c59ef6ec5edbda6a6b11d8948452bcf32539f69ff2c436e981ad",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P012_04/boltz2.cif",
+      "sha256": "1d47cee516c18104b88f5b283af8be679b4a8c5f2c472cbd34a48b119664eacf",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P012_04/deltaforge-input.pdb",
+      "sha256": "fa1a5cc220f038b3a600579b7d83ec75b07b002432a35db4fdb020eb8d503754",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P012_04/apnovo-generation.cif",
+      "sha256": "c2dc301b899bfad71bcee91b9f020260d960fd3806f48ac8962060706dccb3c0",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/Design_787/boltz2.cif",
+      "sha256": "816d2168df76e72a1b6331b8b6977e40dd10424e3a8b21e45874bfac455c907e",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/Design_787/deltaforge-input.pdb",
+      "sha256": "18a8ac6f85f1f1a8b05eb12e1356eed1050e50ec10b8a5d10afb50b4c04c0b3d",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/Design_15/boltz2.cif",
+      "sha256": "bcd1d04d8dee32c20c86771c363c15c14fdc4fb96e6e093c512124f54408a169",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/Design_15/deltaforge-input.pdb",
+      "sha256": "71fa77b7cdcd0a9762fb5d17a3502ae4c828c88fdf0e39cb6050f417908e3409",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P093_03/boltz2.cif",
+      "sha256": "ff5831a2a7632820d3e465ce3445e724379a6db0ce217efbba99701e140f8de9",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P093_03/deltaforge-input.pdb",
+      "sha256": "12df24d378b79870f19f5a6a3bb38a43b4e53f9fd9673d39f9430e91854160c5",
+      "source_byte_identity": true
+    },
+    {
+      "path": "models/LK_P093_03/apnovo-generation.cif",
+      "sha256": "13af23cdf6fca1be5ad50d0d55042a351a50da601c9fdd5c93b7622a06a8096f",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S10_02_067/standalone-exact-display.pdb",
+      "sha256": "5d20357cffb341ad42261fed52bba0fe029c3cfac209f0c18185895d92f793b1",
+      "source_byte_identity": true
+    },
+    {
+      "path": "parents/S10_02_067/generator.cif",
+      "sha256": "8e0d4f9dec5f4436c6ac152c39bf6faaf3266c7e62f8d4920664e7108a87a597",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P050_07-complex.jpg",
+      "sha256": "ae83cbaa9dac8d3734087495284e30462f740a35b08c6d2f18abbcd814f0c898",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P050_07-interface.jpg",
+      "sha256": "2ba45f31242c2b84ff21ec5e4c87f6c8a13013d6d28dcb2c19d463763dcb26d1",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P063_07-complex.jpg",
+      "sha256": "b3c273eb3d36fd482b4824c658a24a675eb10529e76705fbd205d2264f9bd735",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P063_07-interface.jpg",
+      "sha256": "2dc82a8265f627362a11e0b6ca8202a62e608d79083fc1a8e07cbe922c7bd9b3",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P109_06-complex.jpg",
+      "sha256": "bc08c5af60bfc6bcfa3b154fab960fac8bf20c573573f98400c1c30216f49157",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P109_06-interface.jpg",
+      "sha256": "f4a1345c8962864e697bbda825464b94cd24f42c47888eef76fe547b4ea8de51",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/Design_520-complex.jpg",
+      "sha256": "0d41f35b8444dc0116696ad1c5c711f6d4a71d6ac6a6cb585d1bd8dbe6be43ff",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/Design_520-interface.jpg",
+      "sha256": "7b5497f9e371f15fec80f1199583afef8944f775c3a4f9d2fe275df07139cb0a",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P088_08-complex.jpg",
+      "sha256": "c5f68a62714485e6548265199c5ef43bce2f3449a066f13eff4cd6ee589526b3",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P088_08-interface.jpg",
+      "sha256": "084db82addb26fab4b3f691a724f5c9af71d0166e429920f2f8a089dfb3da14b",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P050_03-complex.jpg",
+      "sha256": "2ee98d4cdb3de366c85de422cad0ae63f3813d754efd902f8ff89297cf876610",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P050_03-interface.jpg",
+      "sha256": "541197164aacfc7af9ba3ba456b4b1642e727122ccb6d0057d30fba456ab570b",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/Design_973-complex.jpg",
+      "sha256": "9677a5abd446b645c3179422a5a88f48843ab30c42858cea56a0c16149a3db7d",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/Design_973-interface.jpg",
+      "sha256": "39fb8600c74015cb611ed6230cd42f6a8237807bf0cb8286d23911b4a5a36617",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P157_08-complex.jpg",
+      "sha256": "d9b43a1c987e009cb35b54e8838a26195faad0c12fdac416189f7410dcfdf8d4",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P157_08-interface.jpg",
+      "sha256": "7f4802b3bae5ac977e1090964fac0f280945f83405ea0205a06b9cda48f8589a",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P069_04-complex.jpg",
+      "sha256": "5a0186410678df8393141c70bb4df9a1c1a4541dc60d8deec502ae94df16ad56",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P069_04-interface.jpg",
+      "sha256": "618520b2f5b4301dff2f79223cbfe42eaa60434a67624ccc42fd458583958a45",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P024_03-complex.jpg",
+      "sha256": "52f28117130120e202328231f728d9ad2a559e8f7db2230aeff36f3d8dab1490",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P024_03-interface.jpg",
+      "sha256": "933650b7828ab6c40e0267a497b2a9e6751d6a22403ff6b2274558f27398bac4",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/Design_994-complex.jpg",
+      "sha256": "64f857730b8faa419488a95fc67fe847d66dd2f4921b8489f6c9ed19bc05e4e0",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/Design_994-interface.jpg",
+      "sha256": "73959ec100cea70f9de894043dcd50dd3d4d275bd31ce21bfaba2f1da3faed7c",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P012_08-complex.jpg",
+      "sha256": "bb7ee298896ad90a97c99d74115de8573e8f68dcd80f1f803995ccefdabd1bfd",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P012_08-interface.jpg",
+      "sha256": "c450099cc95198b482c5dce663b5007b118c4a798d0107df90765ecf956d2d45",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P062_00-complex.jpg",
+      "sha256": "c21182e654299ca5d2bceae0ad1fb995071aae7a761cb58783c9f4e690af8518",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P062_00-interface.jpg",
+      "sha256": "6a132dd2aa1a127dcd16132ba436cc697491089348d6c19360464d1a9a59e6fb",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/Design_440-complex.jpg",
+      "sha256": "c9653e6d617d72eef65aa3c68c5314dee3e83266532d643cbed23514dc898fad",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/Design_440-interface.jpg",
+      "sha256": "2842718bd60440d956712fb73495810fd326b6ffe5a57710363239fa9a4d107f",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P141_07-complex.jpg",
+      "sha256": "6b08b7034659a9a4fe985bc04712a773f6e930e37a2bd7f5f791edd89d6126ab",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P141_07-interface.jpg",
+      "sha256": "1fc99fc7b5debeb989ad2ddfcb4c85bb3490848b3a67ebb67ed1ad805799d6f2",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P002_05-complex.jpg",
+      "sha256": "a6ef51884c0033dbfe8c76d76cdce96264eaf168a1f406e242fc5765f9f847e0",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P002_05-interface.jpg",
+      "sha256": "f7a707322447674a001ae1bc0379ec678731aba70fd089ad27ebb7ceac0db786",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P012_04-complex.jpg",
+      "sha256": "09a7e7132b263f08434ff8d03ad7177864ce9782ae04d9ff659f9994621fcd34",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P012_04-interface.jpg",
+      "sha256": "1e791f44a9688ff2cacea43806fe72c19aa1fc21c5285e1c28a9f798baf775d0",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/Design_787-complex.jpg",
+      "sha256": "668d030a4f77dfbc2c880a17bb8bff410c274af3ea7d30de16834dc7782dc49e",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/Design_787-interface.jpg",
+      "sha256": "be02593da32e79c3a9144e08f07a2eb135c9b029d971ee2db3674176a4d94caf",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/Design_15-complex.jpg",
+      "sha256": "49f1adfd8bf832e8f94f1fe1600fb84e181bb5846bedf44d500c77ad533ab7ee",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/Design_15-interface.jpg",
+      "sha256": "4d8ffcb63674af4bfdd4d8e96495d4fdcc231b4f6dc2bc46c609e711f45294e0",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P093_03-complex.jpg",
+      "sha256": "6d4c6efeb36f111c559fe5e945b35220d1af8ab2792cdc15ffa7960cd11afac9",
+      "source_byte_identity": true
+    },
+    {
+      "path": "figures/LK_P093_03-interface.jpg",
+      "sha256": "dd8a040742f37c3cab84ab7d66b344f21501c9092203b18266cb3a9a0a0ddf5a",
+      "source_byte_identity": true
+    },
+    {
+      "path": "candidate-sequences.csv",
+      "sha256": "2f94f43b6949db1357fdd6d3e3651c30c50f84e1078d918aebe1b9b2736d17ff",
+      "source_byte_identity": true
+    },
+    {
+      "path": "final20.fasta",
+      "sha256": "2e8b3293d9100f32dacb4b572bb12109004d1f6d9e12b84407fa0edc9cae7151",
+      "source_byte_identity": true
+    },
+    {
+      "path": "final20-metrics.csv",
+      "sha256": "89c640995327d28bc56ac0f2336b389441ce081deab6d73979d83625b12eba6f",
+      "source_byte_identity": true
+    },
+    {
+      "path": "submission.csv",
+      "sha256": "5fe7fe14d88de7124a8e071377677e6dbaaa3bb8c072f8e9f4dd9735de7c5e23",
+      "source_byte_identity": true
+    },
+    {
+      "path": "source-tables/GLP1R_LigandForge_Original_Top50_DeltaForge_Kd.csv",
+      "sha256": "0440fc1201fcfea9a5760f3f5b9fe1767c0b3a01a83a30c8638ae88662541105",
+      "original_source_sha256": "da4de8915b1ca76443882c0651920ddd9551839d0d75a5b18b8b1ff4653b0360",
+      "source_byte_identity": false,
+      "transformation": "CSV reserialization; infrastructure paths replaced with logical source identifiers; metrics/sequences/ranks unchanged"
+    },
+    {
+      "path": "source-tables/GLP1R_LigandForge50_and_DLD50_DeltaForge_Summary.csv",
+      "sha256": "6db548944c932cf850e66240dcfa99d0f02867354b3ff30fcf6be05510d04ca7",
+      "original_source_sha256": "6db548944c932cf850e66240dcfa99d0f02867354b3ff30fcf6be05510d04ca7",
+      "source_byte_identity": false,
+      "transformation": "CSV reserialization; infrastructure paths replaced with logical source identifiers; metrics/sequences/ranks unchanged"
+    },
+    {
+      "path": "source-tables/GLP1R_DLD_Top50_DeltaForge_Kd_and_Boltz2_Metrics.csv",
+      "sha256": "a8cfb0fae05aaa45bc86ca73d47ff03954e0ab6b5d3acf3541e4c75fc1364629",
+      "original_source_sha256": "da9569bf0e8b74cce3d6792eb260d6a4b17b35e6f46e0793d49f02c0d3a0e728",
+      "source_byte_identity": false,
+      "transformation": "CSV reserialization; infrastructure paths replaced with logical source identifiers; metrics/sequences/ranks unchanged"
+    },
+    {
+      "path": "scores/LK_P050_07.json",
+      "sha256": "d0e395684902475368b0f433c5ffcad9c59e95f0f1d4d4d9224ff7a4150c1033",
+      "original_source_sha256": "494200dff525731399b30d8ee04f5fb949f6715eba38198a843dd4e65cc1fb24",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/LK_P063_07.json",
+      "sha256": "cf2d7346baadfccd84a04c65eb77086aefaf742cb3662c3cb07be94e3cf57c2b",
+      "original_source_sha256": "ae5f2d0601c9fbade789cec67bc2d3d8dac7d8f3b6e3d786db9d139712b9442b",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/LK_P109_06.json",
+      "sha256": "ebbd675507c023d8327dfaf089026b24b327c6b644f29c72f47573a0bb92c856",
+      "original_source_sha256": "4f1d4b99275a1113a7ba87b1a9c4146755b4948245228af2d1392ac7d6e319dd",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/Design_520.json",
+      "sha256": "737a430825d12e5bc4bd078f5fb4af92204d4fdb06520f649a3f9517f38ded95",
+      "original_source_sha256": "aad99b27b0288e9425d12fae48783b51e035db03ab237f48150664ab3007a5c3",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/LK_P088_08.json",
+      "sha256": "7994024ae823ed9d007bec157972f495d6384ce5a457fc6e0fddcd34fe716d49",
+      "original_source_sha256": "100facae74ec7dc951739cd0b09f1238ff337e4833607c56369d2e17f3cb7119",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/LK_P050_03.json",
+      "sha256": "2869bd12b238154f0bb66bb0908d578372873f6db36f3febdcd774d94577f4df",
+      "original_source_sha256": "f98ec71067dc4d34d23d94b3e0bebe182ee6b945e26c0ca94b4222daec7651c8",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/Design_973.json",
+      "sha256": "169e4255330a031146a3c88a0fe8b772b963bbc9c5c32f98d6e9a780ac95bdc7",
+      "original_source_sha256": "430bd3acb36a1cc0941a4cf34e01b1b7c6e2a32d3fe3d2397eb24cea94b6a87c",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/LK_P157_08.json",
+      "sha256": "896eab76a264221eaf2d00d2563e06f7284ab508725cc6e2de1652b3bea78ba5",
+      "original_source_sha256": "6dfcf6988909ebafe8c3f60fdc4bba56f3a390d47877cf5cb96e5ce0bf9eab1c",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/LK_P069_04.json",
+      "sha256": "9faa9b2f785b26460b1d04cf5a5907034712ee8ed10f97d85e7399106fd15d6d",
+      "original_source_sha256": "8df5d311d7886994c66d0bd81427a9da5972211062fb04b534edbadaafef5fdc",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/LK_P024_03.json",
+      "sha256": "fc192226b99d13592b4ac45b204888615576486a88ec53623a197d193f886c7e",
+      "original_source_sha256": "3d5214c50e078aeb5312a53fa6cde425c0b0961cb21d46ca9d7f9c5cc41a04ff",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/Design_994.json",
+      "sha256": "b71c20ce71b64ff15b0e59a32c1c3442864ad149fffff1354369321623e3cb6a",
+      "original_source_sha256": "f90dad182faa41a5a1c3a24080b13a0516510571fb445cc3a7a360ef9d298327",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/LK_P012_08.json",
+      "sha256": "f287600d6206e653b3839a3d0a1f59e5ee3345e689b8a5ece9333a3f6053deb3",
+      "original_source_sha256": "20e4273cd4e3c8cf407fe103deb973c6c1873cba3e9ca7021503f52c9ac7b3ff",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/LK_P062_00.json",
+      "sha256": "054d68f6e3af505ddb99b149657ab4bfaa7f4fbd5daa12c9bed2d079c48cac3e",
+      "original_source_sha256": "bf2aa21dd94c3b0383884bceb43e35c81230f2f7d8150386a634d0647b68a822",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/Design_440.json",
+      "sha256": "19fddee7b8790f896b83a8fa50aa9d6286bdcb0ff4cf934ca8fcd478e440db0d",
+      "original_source_sha256": "83fceacca3c499f99601e106db9f6d290d1f501b807f8d9f9e1eff4010602ce2",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/LK_P141_07.json",
+      "sha256": "a038c0fe5a52e9cbf0749d858eb71de209d712f20da38f10f6750342ee71f022",
+      "original_source_sha256": "6676183e5d74c20062985940808e9ec4a7cf41d8f2e2e02cf075b760c68e380b",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/LK_P002_05.json",
+      "sha256": "ddfbd0a52e6c3f782ef554006698565fd4cbf26316ba06f42ae23ce6bd9fa3de",
+      "original_source_sha256": "80f0480127c0e61dce92b002b5e845ec638a8b8f5193fdbe07401b41051eff24",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/LK_P012_04.json",
+      "sha256": "5384661eb0e75d117d2413e6d246caaef0d95dc6cb75cfb81f4c7e130695693b",
+      "original_source_sha256": "c26ee6aeae2fc63264a153a3580f74326459e90134678c43e07eb5e99218daa0",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/Design_787.json",
+      "sha256": "7b81bebc9050d4293227afbd609160544efd20ea8155a6f7494d57a47df923b4",
+      "original_source_sha256": "89429dc7ef5108a67902a75255a505b600a3953cca075b5f2321c19f0d40605d",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/Design_15.json",
+      "sha256": "5319afe13743f3d4b3b6f7389942a98805a932761f6dd51233aa286db80a84ef",
+      "original_source_sha256": "7ed4e2cc425b7b1caa05f18d8db808e0c48025d679934871a845d9e338f7e80d",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    },
+    {
+      "path": "scores/LK_P093_03.json",
+      "sha256": "2525df2a3fa0a39cd0f96bcbed9ff391b72d3383693b3b29631812a5ebf52cdc",
+      "original_source_sha256": "619d3310f0b051f66af2870afca14edc32fd10f02dc808ac6e943a406946c6c5",
+      "source_byte_identity": false,
+      "transformation": "JSON path normalization only; original raw source hash retained"
+    }
+  ],
+  "normalization": "Coordinate and image files byte-identical; publication JSON/CSV derivatives normalize infrastructure paths and retain original source hashes.",
+  "original_source_manifest_sha256": "28f2d3bc0fb92ae838b491c6805b2261fd39c911a82a72495377b8702e08c96e"
+}

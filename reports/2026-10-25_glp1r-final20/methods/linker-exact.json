@@ -1,0 +1,92 @@
+{
+  "original_source_sha256": "f96250329278edeee1dcb787c0c2481f469f3231b9d4dfe19cbd32a3b03cb327",
+  "original_scientific_record": {
+    "schema_version": 1,
+    "project_id": "adaptyv-week3",
+    "campaign_id": "glp1r-r40-design",
+    "run_id": "2026-10-24_pair183-extracellular-exact_001",
+    "created_at": "2026-10-24T14:36:18.530169+00:00",
+    "parents": [
+      {
+        "campaign_id": "glp1r-r40-design",
+        "run_id": "2026-10-24_pair185-linkers-exact_002",
+        "manifest_sha256": "f22b77f5b48f14adf14d4b3612e679584b7960987c06080775c786303b15d3b9"
+      }
+    ],
+    "recipe": {
+      "stages": {
+        "01_staging": {
+          "method": "PDB full-chain AF3 input preparation",
+          "execution": "local"
+        },
+        "02_design": {
+          "method": "AFSample3 complex conformational sampling",
+          "execution": "mimas",
+          "submission": "requires explicit user review and authorization"
+        },
+        "03_filtering": {
+          "method": "pending scientific selection",
+          "execution": "local"
+        },
+        "04_analysis": {
+          "method": "pending scientific selection",
+          "execution": "local"
+        }
+      }
+    },
+    "settings": {
+      "selected_pairs": 183,
+      "primary_refolds": 1830,
+      "excluded_pairs": [
+        "P000",
+        "P001"
+      ],
+      "retained_Exact_pilot": 20,
+      "new_production_refolds": 1810,
+      "settings": {
+        "method": "Boltz2_exact",
+        "seed": 101,
+        "recycling_steps": 3,
+        "sampling_steps": 200,
+        "diffusion_samples": 1,
+        "max_msa_seqs": 8192,
+        "binder_msa": "empty",
+        "templates": "none",
+        "msa_server": false
+      },
+      "CPU_first": true,
+      "max_GPU_concurrency": 2,
+      "max_group": 20,
+      "CPU_GPU_tracking": true,
+      "phone_alert": true,
+      "external_API_calls": 0
+    },
+    "files_sha256": {
+      "campaign.json": "5bd25d87b3692dada7332bd821e1c9643fe4a882f9a5ccf5072a2e8caf85488f",
+      "payload/6x18-opm.pdb": "3d1782333d3dfc184bb8162d197a597835033852c771998b39a024807cef56c9",
+      "payload/annotate_refold.py": "4d1aed24ddac1dfe68643fe07e8f4f4badf6d863a2c7456232280dfeb53289e1",
+      "payload/boltz2_artifacts.py": "aca90538c89de9e45bd7462c6854ebcfe7470acb745533a930514f23c356482c",
+      "payload/bounded_runtime.py": "8bfe776cdcd32e16e536edb299b00c6283dde5942f622baf93465f0b392b10b2",
+      "payload/cache_hook/sitecustomize.py": "52993f430cdb7d92a69d882b4719529904f4bd344e3670618ed5e53b0a53ca32",
+      "payload/compare.py": "f917a93e3b4b2a7740458eedfe3eeffb7133aea2cae9ba0e67431e8bf7e33ae8",
+      "payload/exact_worker.py": "ffa62ea036cf7d2a13df20beaa4c29b2e6d661433661293dc0c23ee95fe36cff",
+      "payload/features-production.sbatch": "c6cae1185489613915f420e7baa55c9530d0985b3473f78392457405f53e49ca",
+      "payload/final.sbatch": "f00edd569b5db54d052044a29d8756c11d17dcbf733ef3d783eb95aca0cbdea6",
+      "payload/gpu-production.sbatch": "083524d084ac30d20e76285bab00f56efa75e7fbb1a449680f8f4a55c8c1a0f5",
+      "payload/launchers.py": "83888d63b3e1a1163c82d5e8fb592e1ec985a19ff0dd7902eab23cc50cfce508",
+      "payload/parent-candidate-contact-retention.csv": "64c3e01c94ffe8e71bd4f4c18e1e4297e866bbee3071d368d59e1b328a470fe5",
+      "payload/parent-final-readout.json": "129e55b8f7ca7bfc49185d3094ffb933a9897324fb05393d0a443fc7900c4393",
+      "payload/parent-membrane-side-validation.json": "893576fcc37fb7a7e99987c1f421790d28c334c6a782a6dbb1010d1fb2473386",
+      "payload/pilot_accept.sbatch": "73335341a1a0340d1327ec859a288a61c706ac84fa278545197086076c525fd6",
+      "payload/plan.json": "9aa21d2c47acb0efae793da66119dca9647ad8914195cc4af36d758849d182a7",
+      "payload/resource_checker.py": "8be0b833b3d769bf58d4fa701adbb9db7ffb53dd9795ebbe67fa12e9d92334e9",
+      "payload/selection.json": "6b6da173f0299cb8c304152d5b332009c2067713ed6a32a5824a21ffb9dccf12",
+      "payload/target.fasta": "db089fb6aada7477f6b540b23321795aa478646e29db887d80e5f29ac646c1bb",
+      "project.json": "97508b14d5c223e9bf13018725336eb525807706cf4fcfc144b4a08f6d608ef8",
+      "settings.json": "6c7c3aa3a3c921efc4325e4557194f005ca5e7bef963d630e27ccd86574b206d",
+      "workflow.lock.json": "0ad286274c383cb6e665d415364df0803b1b7a405844577e37d704d5ade62921"
+    },
+    "scientific_inputs_validated": false
+  },
+  "publication_transform": "Infrastructure paths normalized; scientific settings, source/weight hashes and version identities retained"
+}

@@ -15,16 +15,16 @@
         },
         "02_design": {
           "method": "CPU MSA and native features then cache-only Boltz2-Exact",
-          "execution": "HOST",
+          "execution": "remote-cpu",
           "submission": "authorized by user request on 2026-10-15"
         },
         "03_filtering": {
           "method": "pinned ipSAE, PAE10/dist15, A/B Type=max",
-          "execution": "HOST CPU"
+          "execution": "remote CPU"
         },
         "04_analysis": {
           "method": "complete-population ranking; top 100/1000 with full evidence",
-          "execution": "HOST CPU"
+          "execution": "remote CPU"
         }
       }
     },

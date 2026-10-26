@@ -28,9 +28,8 @@ jobs:
     
     - name: Run privacy check
       run: |
-        # Run privacy check in report-only mode for CI
-        # Findings are documented in the PR description for owner review
-        python scripts/check_privacy.py --report-only
+        # Privacy check is now blocking - will fail CI if leaks are detected
+        python scripts/check_privacy.py
     
     - name: Run verify_release.py
       run: |

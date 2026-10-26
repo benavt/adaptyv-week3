@@ -21,7 +21,7 @@
         },
         "02_design": {
           "method": "AFSample3 complex conformational sampling",
-          "execution": "HOST",
+          "execution": "remote-cpu",
           "submission": "requires explicit user review and authorization"
         },
         "03_filtering": {

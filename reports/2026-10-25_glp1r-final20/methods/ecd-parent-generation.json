@@ -1,0 +1,1546 @@
+{
+  "original_source_sha256": "d94bb1dabb5a5e075eb49d5c19fb08af5bb755ecd3d49ef6712715da773f8c1a",
+  "original_scientific_record": {
+    "status": "authorized_execution_preparation",
+    "authorization": "User requested HOST generation, resource monitoring, phone alerts and Exact refolding of every design; explicitly selected both is_non_loopy values and12,000 total on2026-10-19",
+    "source_analysis_run": "campaigns/glp1r-apo-patch/runs/2026-10-19_seed156-accessibility_001",
+    "target": {
+      "name": "human GLP1R",
+      "uniprot": "P43220-1",
+      "construct_uniprot": [
+        24,
+        463
+      ],
+      "residues": 440,
+      "native_chain": "B",
+      "native_residues": [
+        1,
+        440
+      ],
+      "sequence_sha256": "62f9e89bb94674e3123dee8e30850b64f002dc55e9d261d2d7db75da4b91b813",
+      "template": "seed-156_sample-1",
+      "native_cif": "seed-156_sample-1_native.cif",
+      "native_cif_sha256": "ecd773338afeb6fb5f639256d93c90595ddc7399ec9e0d693b079dda1bb89aa4",
+      "generation_PDB": "target_native_B1-440.pdb",
+      "generation_PDB_sha256": "68695a5eec2c0f3216680f87aa8071e14b658945a912c229d8e3f489e4b499da",
+      "context": "All440 receptor residues fixed in sequence and coordinates; no truncation to prior409aa assay reference; no GLP1 peptide, explicit membrane or glycans in generator input",
+      "numbering": "Native Bn = UniProt n+23; PyMOL review objects use UniProt numbers"
+    },
+    "hotspots": {
+      "primary": {
+        "aa": "R",
+        "uniprot": 40,
+        "native_chain": "B",
+        "native_residue": 17,
+        "sidechain_atoms": [
+          "CB",
+          "CG",
+          "CD",
+          "NE",
+          "CZ",
+          "NH1",
+          "NH2"
+        ]
+      },
+      "optional": [
+        {
+          "aa": "Q",
+          "uniprot": 37,
+          "native_B": 14
+        },
+        {
+          "aa": "E",
+          "uniprot": 34,
+          "native_B": 11
+        }
+      ],
+      "semantics": "Only R40 is required at contact-filter stage; Q37/E34 are scored/reported without hard constraints"
+    },
+    "screening": {
+      "primary_sidechain_contact_max_A": 4.5,
+      "optional_contact_max_A": 4.5,
+      "minimum_binder_target_heavy_distance_A": 2.0,
+      "membrane_source": "6x18-opm.pdb",
+      "membrane_half_thickness_A": 14.9,
+      "membrane_fit": "Same253 C-alpha core positions in every condition; excludes UniProt136-139 that were present in prior257-position anchor",
+      "anchor_native_positions": [
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400
+      ],
+      "boundary_outward_margin_A": 3.0,
+      "conservative_atomic_radius_A": 1.8,
+      "membrane_gate": "All binder heavy atoms on extracellular side beyond14.9+3+1.8A after core fit",
+      "glycosites_uniprot": [
+        63,
+        82,
+        115
+      ],
+      "glycosite_ND2_exclusion_radius_A": 15.0,
+      "glycan_gate": "15A attachment-distance prescreen only; explicit occupied glycan ensembles and full-binder clashes required before final eligibility",
+      "glycan_occupancy_and_glycoforms": "Unselected; confirm assay-relevant occupancy/glycoforms before interpreting glycan clearance",
+      "ensemble_controls": [
+        "seed-105_sample-0",
+        "seed-169_sample-1",
+        "seed-253_sample-0",
+        "bound_cluster1_seed-178_sample-4"
+      ],
+      "orientation_caveat": "Candidate cross-domain median PAE21.7/26.8A; test neighboring states, no stable orientation claim",
+      "selection": "Report R40-contact yield and membrane/glycan attrition per engine; no equal native conditioning or equal final-sequence-count claim",
+      "functional_followup": "Binding and receptor activation both required; apo stabilization alone may oppose activation",
+      "additional_sweep_QC": [
+        "All440 target residues and target sequence retained",
+        "All target atoms outside B106-116 fixed for flexible-arm native outputs; all target atoms fixed for fixed arms",
+        "Receptor covalent connectivity and stereochemistry through rebuilt linker; reject backbone breaks",
+        "ECD internal fold and TMD structure preserved; report core-aligned ECD displacement without assuming free motion",
+        "Glycan checks use each generated target conformation, never stale template ND2 coordinates"
+      ]
+    },
+    "parent_review_run": "campaigns/glp1r-r40-design/runs/2026-10-19_apo-r40-engine-comparison_001",
+    "sweep_analysis": {
+      "primary_endpoint": "Number passing R40 contact plus receptor integrity and membrane geometry per1000 requested; explicit glycan review remains separate required eligibility gate",
+      "denominators": [
+        "requested",
+        "completed",
+        "parsed",
+        "receptor_integrity_pass",
+        "R40_contact_pass",
+        "membrane_pass",
+        "glycan_prescreen_pass",
+        "explicit_glycan_eligible"
+      ],
+      "secondary": [
+        "Q37/E34 contacts without mandatory requirement",
+        "binder helix/strand/coil fraction and length distributions",
+        "patch coverage/contact residues and interface burial",
+        "backbone diversity/cluster count; no success inflation from near duplicates",
+        "linker geometry and target preservation",
+        "CPU/GPU walltime, utilization, memory and successful-backbone cost"
+      ],
+      "comparison": "Report2x2 interaction and within-factor differences with binomial uncertainty; stratify by binder length; equal requested counts do not imply equal successful counts or compute",
+      "selection": "Choose by feasible unique R40-binding backbones, not raw non-loopy appearance. Use successful designs for balanced downstream sequence/refold evaluation once MPNN budget is selected."
+    },
+    "conditions": [
+      {
+        "id": "rfd3_L20-40_linkerfixed_NL0",
+        "engine": "rfd3",
+        "binder_length": [
+          20,
+          40
+        ],
+        "linker_flexible": false,
+        "is_non_loopy": false,
+        "requested": 1000
+      },
+      {
+        "id": "rfd3_L20-40_linkerfixed_NL1",
+        "engine": "rfd3",
+        "binder_length": [
+          20,
+          40
+        ],
+        "linker_flexible": false,
+        "is_non_loopy": true,
+        "requested": 1000
+      },
+      {
+        "id": "rfd3_L20-40_linkerflex_NL0",
+        "engine": "rfd3",
+        "binder_length": [
+          20,
+          40
+        ],
+        "linker_flexible": true,
+        "is_non_loopy": false,
+        "requested": 1000
+      },
+      {
+        "id": "rfd3_L20-40_linkerflex_NL1",
+        "engine": "rfd3",
+        "binder_length": [
+          20,
+          40
+        ],
+        "linker_flexible": true,
+        "is_non_loopy": true,
+        "requested": 1000
+      },
+      {
+        "id": "rfd3_L40-60_linkerfixed_NL0",
+        "engine": "rfd3",
+        "binder_length": [
+          40,
+          60
+        ],
+        "linker_flexible": false,
+        "is_non_loopy": false,
+        "requested": 1000
+      },
+      {
+        "id": "rfd3_L40-60_linkerfixed_NL1",
+        "engine": "rfd3",
+        "binder_length": [
+          40,
+          60
+        ],
+        "linker_flexible": false,
+        "is_non_loopy": true,
+        "requested": 1000
+      },
+      {
+        "id": "rfd3_L40-60_linkerflex_NL0",
+        "engine": "rfd3",
+        "binder_length": [
+          40,
+          60
+        ],
+        "linker_flexible": true,
+        "is_non_loopy": false,
+        "requested": 1000
+      },
+      {
+        "id": "rfd3_L40-60_linkerflex_NL1",
+        "engine": "rfd3",
+        "binder_length": [
+          40,
+          60
+        ],
+        "linker_flexible": true,
+        "is_non_loopy": true,
+        "requested": 1000
+      },
+      {
+        "id": "apnovo_L20-40_linkerfixed",
+        "engine": "apnovo",
+        "binder_length": [
+          20,
+          40
+        ],
+        "linker_flexible": false,
+        "is_non_loopy": null,
+        "requested": 1000
+      },
+      {
+        "id": "apnovo_L20-40_linkerflex",
+        "engine": "apnovo",
+        "binder_length": [
+          20,
+          40
+        ],
+        "linker_flexible": true,
+        "is_non_loopy": null,
+        "requested": 1000
+      },
+      {
+        "id": "apnovo_L40-60_linkerfixed",
+        "engine": "apnovo",
+        "binder_length": [
+          40,
+          60
+        ],
+        "linker_flexible": false,
+        "is_non_loopy": null,
+        "requested": 1000
+      },
+      {
+        "id": "apnovo_L40-60_linkerflex",
+        "engine": "apnovo",
+        "binder_length": [
+          40,
+          60
+        ],
+        "linker_flexible": true,
+        "is_non_loopy": null,
+        "requested": 1000
+      }
+    ],
+    "tasks": [
+      {
+        "index": 0,
+        "condition": "rfd3_L20-40_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 0,
+        "count": 100,
+        "seed_start": 101
+      },
+      {
+        "index": 1,
+        "condition": "rfd3_L20-40_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 1,
+        "count": 100,
+        "seed_start": 201
+      },
+      {
+        "index": 2,
+        "condition": "rfd3_L20-40_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 2,
+        "count": 100,
+        "seed_start": 301
+      },
+      {
+        "index": 3,
+        "condition": "rfd3_L20-40_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 3,
+        "count": 100,
+        "seed_start": 401
+      },
+      {
+        "index": 4,
+        "condition": "rfd3_L20-40_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 4,
+        "count": 100,
+        "seed_start": 501
+      },
+      {
+        "index": 5,
+        "condition": "rfd3_L20-40_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 5,
+        "count": 100,
+        "seed_start": 601
+      },
+      {
+        "index": 6,
+        "condition": "rfd3_L20-40_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 6,
+        "count": 100,
+        "seed_start": 701
+      },
+      {
+        "index": 7,
+        "condition": "rfd3_L20-40_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 7,
+        "count": 100,
+        "seed_start": 801
+      },
+      {
+        "index": 8,
+        "condition": "rfd3_L20-40_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 8,
+        "count": 100,
+        "seed_start": 901
+      },
+      {
+        "index": 9,
+        "condition": "rfd3_L20-40_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 9,
+        "count": 100,
+        "seed_start": 1001
+      },
+      {
+        "index": 10,
+        "condition": "rfd3_L20-40_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 0,
+        "count": 100,
+        "seed_start": 101
+      },
+      {
+        "index": 11,
+        "condition": "rfd3_L20-40_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 1,
+        "count": 100,
+        "seed_start": 201
+      },
+      {
+        "index": 12,
+        "condition": "rfd3_L20-40_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 2,
+        "count": 100,
+        "seed_start": 301
+      },
+      {
+        "index": 13,
+        "condition": "rfd3_L20-40_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 3,
+        "count": 100,
+        "seed_start": 401
+      },
+      {
+        "index": 14,
+        "condition": "rfd3_L20-40_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 4,
+        "count": 100,
+        "seed_start": 501
+      },
+      {
+        "index": 15,
+        "condition": "rfd3_L20-40_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 5,
+        "count": 100,
+        "seed_start": 601
+      },
+      {
+        "index": 16,
+        "condition": "rfd3_L20-40_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 6,
+        "count": 100,
+        "seed_start": 701
+      },
+      {
+        "index": 17,
+        "condition": "rfd3_L20-40_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 7,
+        "count": 100,
+        "seed_start": 801
+      },
+      {
+        "index": 18,
+        "condition": "rfd3_L20-40_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 8,
+        "count": 100,
+        "seed_start": 901
+      },
+      {
+        "index": 19,
+        "condition": "rfd3_L20-40_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 9,
+        "count": 100,
+        "seed_start": 1001
+      },
+      {
+        "index": 20,
+        "condition": "rfd3_L20-40_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 0,
+        "count": 100,
+        "seed_start": 101
+      },
+      {
+        "index": 21,
+        "condition": "rfd3_L20-40_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 1,
+        "count": 100,
+        "seed_start": 201
+      },
+      {
+        "index": 22,
+        "condition": "rfd3_L20-40_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 2,
+        "count": 100,
+        "seed_start": 301
+      },
+      {
+        "index": 23,
+        "condition": "rfd3_L20-40_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 3,
+        "count": 100,
+        "seed_start": 401
+      },
+      {
+        "index": 24,
+        "condition": "rfd3_L20-40_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 4,
+        "count": 100,
+        "seed_start": 501
+      },
+      {
+        "index": 25,
+        "condition": "rfd3_L20-40_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 5,
+        "count": 100,
+        "seed_start": 601
+      },
+      {
+        "index": 26,
+        "condition": "rfd3_L20-40_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 6,
+        "count": 100,
+        "seed_start": 701
+      },
+      {
+        "index": 27,
+        "condition": "rfd3_L20-40_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 7,
+        "count": 100,
+        "seed_start": 801
+      },
+      {
+        "index": 28,
+        "condition": "rfd3_L20-40_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 8,
+        "count": 100,
+        "seed_start": 901
+      },
+      {
+        "index": 29,
+        "condition": "rfd3_L20-40_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 9,
+        "count": 100,
+        "seed_start": 1001
+      },
+      {
+        "index": 30,
+        "condition": "rfd3_L20-40_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 0,
+        "count": 100,
+        "seed_start": 101
+      },
+      {
+        "index": 31,
+        "condition": "rfd3_L20-40_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 1,
+        "count": 100,
+        "seed_start": 201
+      },
+      {
+        "index": 32,
+        "condition": "rfd3_L20-40_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 2,
+        "count": 100,
+        "seed_start": 301
+      },
+      {
+        "index": 33,
+        "condition": "rfd3_L20-40_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 3,
+        "count": 100,
+        "seed_start": 401
+      },
+      {
+        "index": 34,
+        "condition": "rfd3_L20-40_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 4,
+        "count": 100,
+        "seed_start": 501
+      },
+      {
+        "index": 35,
+        "condition": "rfd3_L20-40_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 5,
+        "count": 100,
+        "seed_start": 601
+      },
+      {
+        "index": 36,
+        "condition": "rfd3_L20-40_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 6,
+        "count": 100,
+        "seed_start": 701
+      },
+      {
+        "index": 37,
+        "condition": "rfd3_L20-40_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 7,
+        "count": 100,
+        "seed_start": 801
+      },
+      {
+        "index": 38,
+        "condition": "rfd3_L20-40_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 8,
+        "count": 100,
+        "seed_start": 901
+      },
+      {
+        "index": 39,
+        "condition": "rfd3_L20-40_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 9,
+        "count": 100,
+        "seed_start": 1001
+      },
+      {
+        "index": 40,
+        "condition": "rfd3_L40-60_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 0,
+        "count": 100,
+        "seed_start": 101
+      },
+      {
+        "index": 41,
+        "condition": "rfd3_L40-60_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 1,
+        "count": 100,
+        "seed_start": 201
+      },
+      {
+        "index": 42,
+        "condition": "rfd3_L40-60_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 2,
+        "count": 100,
+        "seed_start": 301
+      },
+      {
+        "index": 43,
+        "condition": "rfd3_L40-60_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 3,
+        "count": 100,
+        "seed_start": 401
+      },
+      {
+        "index": 44,
+        "condition": "rfd3_L40-60_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 4,
+        "count": 100,
+        "seed_start": 501
+      },
+      {
+        "index": 45,
+        "condition": "rfd3_L40-60_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 5,
+        "count": 100,
+        "seed_start": 601
+      },
+      {
+        "index": 46,
+        "condition": "rfd3_L40-60_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 6,
+        "count": 100,
+        "seed_start": 701
+      },
+      {
+        "index": 47,
+        "condition": "rfd3_L40-60_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 7,
+        "count": 100,
+        "seed_start": 801
+      },
+      {
+        "index": 48,
+        "condition": "rfd3_L40-60_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 8,
+        "count": 100,
+        "seed_start": 901
+      },
+      {
+        "index": 49,
+        "condition": "rfd3_L40-60_linkerfixed_NL0",
+        "engine": "rfd3",
+        "shard": 9,
+        "count": 100,
+        "seed_start": 1001
+      },
+      {
+        "index": 50,
+        "condition": "rfd3_L40-60_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 0,
+        "count": 100,
+        "seed_start": 101
+      },
+      {
+        "index": 51,
+        "condition": "rfd3_L40-60_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 1,
+        "count": 100,
+        "seed_start": 201
+      },
+      {
+        "index": 52,
+        "condition": "rfd3_L40-60_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 2,
+        "count": 100,
+        "seed_start": 301
+      },
+      {
+        "index": 53,
+        "condition": "rfd3_L40-60_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 3,
+        "count": 100,
+        "seed_start": 401
+      },
+      {
+        "index": 54,
+        "condition": "rfd3_L40-60_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 4,
+        "count": 100,
+        "seed_start": 501
+      },
+      {
+        "index": 55,
+        "condition": "rfd3_L40-60_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 5,
+        "count": 100,
+        "seed_start": 601
+      },
+      {
+        "index": 56,
+        "condition": "rfd3_L40-60_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 6,
+        "count": 100,
+        "seed_start": 701
+      },
+      {
+        "index": 57,
+        "condition": "rfd3_L40-60_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 7,
+        "count": 100,
+        "seed_start": 801
+      },
+      {
+        "index": 58,
+        "condition": "rfd3_L40-60_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 8,
+        "count": 100,
+        "seed_start": 901
+      },
+      {
+        "index": 59,
+        "condition": "rfd3_L40-60_linkerfixed_NL1",
+        "engine": "rfd3",
+        "shard": 9,
+        "count": 100,
+        "seed_start": 1001
+      },
+      {
+        "index": 60,
+        "condition": "rfd3_L40-60_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 0,
+        "count": 100,
+        "seed_start": 101
+      },
+      {
+        "index": 61,
+        "condition": "rfd3_L40-60_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 1,
+        "count": 100,
+        "seed_start": 201
+      },
+      {
+        "index": 62,
+        "condition": "rfd3_L40-60_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 2,
+        "count": 100,
+        "seed_start": 301
+      },
+      {
+        "index": 63,
+        "condition": "rfd3_L40-60_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 3,
+        "count": 100,
+        "seed_start": 401
+      },
+      {
+        "index": 64,
+        "condition": "rfd3_L40-60_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 4,
+        "count": 100,
+        "seed_start": 501
+      },
+      {
+        "index": 65,
+        "condition": "rfd3_L40-60_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 5,
+        "count": 100,
+        "seed_start": 601
+      },
+      {
+        "index": 66,
+        "condition": "rfd3_L40-60_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 6,
+        "count": 100,
+        "seed_start": 701
+      },
+      {
+        "index": 67,
+        "condition": "rfd3_L40-60_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 7,
+        "count": 100,
+        "seed_start": 801
+      },
+      {
+        "index": 68,
+        "condition": "rfd3_L40-60_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 8,
+        "count": 100,
+        "seed_start": 901
+      },
+      {
+        "index": 69,
+        "condition": "rfd3_L40-60_linkerflex_NL0",
+        "engine": "rfd3",
+        "shard": 9,
+        "count": 100,
+        "seed_start": 1001
+      },
+      {
+        "index": 70,
+        "condition": "rfd3_L40-60_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 0,
+        "count": 100,
+        "seed_start": 101
+      },
+      {
+        "index": 71,
+        "condition": "rfd3_L40-60_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 1,
+        "count": 100,
+        "seed_start": 201
+      },
+      {
+        "index": 72,
+        "condition": "rfd3_L40-60_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 2,
+        "count": 100,
+        "seed_start": 301
+      },
+      {
+        "index": 73,
+        "condition": "rfd3_L40-60_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 3,
+        "count": 100,
+        "seed_start": 401
+      },
+      {
+        "index": 74,
+        "condition": "rfd3_L40-60_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 4,
+        "count": 100,
+        "seed_start": 501
+      },
+      {
+        "index": 75,
+        "condition": "rfd3_L40-60_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 5,
+        "count": 100,
+        "seed_start": 601
+      },
+      {
+        "index": 76,
+        "condition": "rfd3_L40-60_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 6,
+        "count": 100,
+        "seed_start": 701
+      },
+      {
+        "index": 77,
+        "condition": "rfd3_L40-60_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 7,
+        "count": 100,
+        "seed_start": 801
+      },
+      {
+        "index": 78,
+        "condition": "rfd3_L40-60_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 8,
+        "count": 100,
+        "seed_start": 901
+      },
+      {
+        "index": 79,
+        "condition": "rfd3_L40-60_linkerflex_NL1",
+        "engine": "rfd3",
+        "shard": 9,
+        "count": 100,
+        "seed_start": 1001
+      },
+      {
+        "index": 80,
+        "condition": "apnovo_L20-40_linkerfixed",
+        "engine": "apnovo",
+        "shard": 0,
+        "count": 100,
+        "seed_start": 101
+      },
+      {
+        "index": 81,
+        "condition": "apnovo_L20-40_linkerfixed",
+        "engine": "apnovo",
+        "shard": 1,
+        "count": 100,
+        "seed_start": 201
+      },
+      {
+        "index": 82,
+        "condition": "apnovo_L20-40_linkerfixed",
+        "engine": "apnovo",
+        "shard": 2,
+        "count": 100,
+        "seed_start": 301
+      },
+      {
+        "index": 83,
+        "condition": "apnovo_L20-40_linkerfixed",
+        "engine": "apnovo",
+        "shard": 3,
+        "count": 100,
+        "seed_start": 401
+      },
+      {
+        "index": 84,
+        "condition": "apnovo_L20-40_linkerfixed",
+        "engine": "apnovo",
+        "shard": 4,
+        "count": 100,
+        "seed_start": 501
+      },
+      {
+        "index": 85,
+        "condition": "apnovo_L20-40_linkerfixed",
+        "engine": "apnovo",
+        "shard": 5,
+        "count": 100,
+        "seed_start": 601
+      },
+      {
+        "index": 86,
+        "condition": "apnovo_L20-40_linkerfixed",
+        "engine": "apnovo",
+        "shard": 6,
+        "count": 100,
+        "seed_start": 701
+      },
+      {
+        "index": 87,
+        "condition": "apnovo_L20-40_linkerfixed",
+        "engine": "apnovo",
+        "shard": 7,
+        "count": 100,
+        "seed_start": 801
+      },
+      {
+        "index": 88,
+        "condition": "apnovo_L20-40_linkerfixed",
+        "engine": "apnovo",
+        "shard": 8,
+        "count": 100,
+        "seed_start": 901
+      },
+      {
+        "index": 89,
+        "condition": "apnovo_L20-40_linkerfixed",
+        "engine": "apnovo",
+        "shard": 9,
+        "count": 100,
+        "seed_start": 1001
+      },
+      {
+        "index": 90,
+        "condition": "apnovo_L20-40_linkerflex",
+        "engine": "apnovo",
+        "shard": 0,
+        "count": 100,
+        "seed_start": 101
+      },
+      {
+        "index": 91,
+        "condition": "apnovo_L20-40_linkerflex",
+        "engine": "apnovo",
+        "shard": 1,
+        "count": 100,
+        "seed_start": 201
+      },
+      {
+        "index": 92,
+        "condition": "apnovo_L20-40_linkerflex",
+        "engine": "apnovo",
+        "shard": 2,
+        "count": 100,
+        "seed_start": 301
+      },
+      {
+        "index": 93,
+        "condition": "apnovo_L20-40_linkerflex",
+        "engine": "apnovo",
+        "shard": 3,
+        "count": 100,
+        "seed_start": 401
+      },
+      {
+        "index": 94,
+        "condition": "apnovo_L20-40_linkerflex",
+        "engine": "apnovo",
+        "shard": 4,
+        "count": 100,
+        "seed_start": 501
+      },
+      {
+        "index": 95,
+        "condition": "apnovo_L20-40_linkerflex",
+        "engine": "apnovo",
+        "shard": 5,
+        "count": 100,
+        "seed_start": 601
+      },
+      {
+        "index": 96,
+        "condition": "apnovo_L20-40_linkerflex",
+        "engine": "apnovo",
+        "shard": 6,
+        "count": 100,
+        "seed_start": 701
+      },
+      {
+        "index": 97,
+        "condition": "apnovo_L20-40_linkerflex",
+        "engine": "apnovo",
+        "shard": 7,
+        "count": 100,
+        "seed_start": 801
+      },
+      {
+        "index": 98,
+        "condition": "apnovo_L20-40_linkerflex",
+        "engine": "apnovo",
+        "shard": 8,
+        "count": 100,
+        "seed_start": 901
+      },
+      {
+        "index": 99,
+        "condition": "apnovo_L20-40_linkerflex",
+        "engine": "apnovo",
+        "shard": 9,
+        "count": 100,
+        "seed_start": 1001
+      },
+      {
+        "index": 100,
+        "condition": "apnovo_L40-60_linkerfixed",
+        "engine": "apnovo",
+        "shard": 0,
+        "count": 100,
+        "seed_start": 101
+      },
+      {
+        "index": 101,
+        "condition": "apnovo_L40-60_linkerfixed",
+        "engine": "apnovo",
+        "shard": 1,
+        "count": 100,
+        "seed_start": 201
+      },
+      {
+        "index": 102,
+        "condition": "apnovo_L40-60_linkerfixed",
+        "engine": "apnovo",
+        "shard": 2,
+        "count": 100,
+        "seed_start": 301
+      },
+      {
+        "index": 103,
+        "condition": "apnovo_L40-60_linkerfixed",
+        "engine": "apnovo",
+        "shard": 3,
+        "count": 100,
+        "seed_start": 401
+      },
+      {
+        "index": 104,
+        "condition": "apnovo_L40-60_linkerfixed",
+        "engine": "apnovo",
+        "shard": 4,
+        "count": 100,
+        "seed_start": 501
+      },
+      {
+        "index": 105,
+        "condition": "apnovo_L40-60_linkerfixed",
+        "engine": "apnovo",
+        "shard": 5,
+        "count": 100,
+        "seed_start": 601
+      },
+      {
+        "index": 106,
+        "condition": "apnovo_L40-60_linkerfixed",
+        "engine": "apnovo",
+        "shard": 6,
+        "count": 100,
+        "seed_start": 701
+      },
+      {
+        "index": 107,
+        "condition": "apnovo_L40-60_linkerfixed",
+        "engine": "apnovo",
+        "shard": 7,
+        "count": 100,
+        "seed_start": 801
+      },
+      {
+        "index": 108,
+        "condition": "apnovo_L40-60_linkerfixed",
+        "engine": "apnovo",
+        "shard": 8,
+        "count": 100,
+        "seed_start": 901
+      },
+      {
+        "index": 109,
+        "condition": "apnovo_L40-60_linkerfixed",
+        "engine": "apnovo",
+        "shard": 9,
+        "count": 100,
+        "seed_start": 1001
+      },
+      {
+        "index": 110,
+        "condition": "apnovo_L40-60_linkerflex",
+        "engine": "apnovo",
+        "shard": 0,
+        "count": 100,
+        "seed_start": 101
+      },
+      {
+        "index": 111,
+        "condition": "apnovo_L40-60_linkerflex",
+        "engine": "apnovo",
+        "shard": 1,
+        "count": 100,
+        "seed_start": 201
+      },
+      {
+        "index": 112,
+        "condition": "apnovo_L40-60_linkerflex",
+        "engine": "apnovo",
+        "shard": 2,
+        "count": 100,
+        "seed_start": 301
+      },
+      {
+        "index": 113,
+        "condition": "apnovo_L40-60_linkerflex",
+        "engine": "apnovo",
+        "shard": 3,
+        "count": 100,
+        "seed_start": 401
+      },
+      {
+        "index": 114,
+        "condition": "apnovo_L40-60_linkerflex",
+        "engine": "apnovo",
+        "shard": 4,
+        "count": 100,
+        "seed_start": 501
+      },
+      {
+        "index": 115,
+        "condition": "apnovo_L40-60_linkerflex",
+        "engine": "apnovo",
+        "shard": 5,
+        "count": 100,
+        "seed_start": 601
+      },
+      {
+        "index": 116,
+        "condition": "apnovo_L40-60_linkerflex",
+        "engine": "apnovo",
+        "shard": 6,
+        "count": 100,
+        "seed_start": 701
+      },
+      {
+        "index": 117,
+        "condition": "apnovo_L40-60_linkerflex",
+        "engine": "apnovo",
+        "shard": 7,
+        "count": 100,
+        "seed_start": 801
+      },
+      {
+        "index": 118,
+        "condition": "apnovo_L40-60_linkerflex",
+        "engine": "apnovo",
+        "shard": 8,
+        "count": 100,
+        "seed_start": 901
+      },
+      {
+        "index": 119,
+        "condition": "apnovo_L40-60_linkerflex",
+        "engine": "apnovo",
+        "shard": 9,
+        "count": 100,
+        "seed_start": 1001
+      }
+    ],
+    "total_designs": 12000,
+    "remote_root": "campaigns/glp1r-r40-design/runs/2026-10-19_r40-twelve-suite-execution_001",
+    "target_sequence": "RPQGATVSLWETVQKWREYRRQCQRSLTEDPPPATDLFCNRTFDEYACWPDGEPGSFVNVSCPWYLPWASSVPQGHVYRFCTAEGLWLQKDNSSLPWRDLSECEESKRGERSSPEEQLLFLYIIYTVGYALSFSALVIASAILLGFRHLHCTRNYIHLNLFASFILRALSVFIKDAALKWMYSTAAQQHQWDGLLSYQDSLSCRLVFLLMQYCVAANYYWLLVEGVYLYTLLAFSVLSEQWIFRLYVSIGWGVPLLFVVPWGIVKYLYEDEGCWTRNSNMNYWLIIRLPILFAIGVNFLIFVRVICIVVSKLKANLMCKTDIKCRLAKSTLTLIPLLGTHEVIFAFVMDEHARGTLRFIKLFTELSFTSFQGLMVAILYCFVNNEVQLEFRKSWERWRLEHLHIQRDSSMKPLKCPTSSLSSGATAGSSMYTATCQASCS",
+    "target_sequence_sha256": "62f9e89bb94674e3123dee8e30850b64f002dc55e9d261d2d7db75da4b91b813",
+    "foundry": {
+      "sampling_steps": 200,
+      "diffusion_batch_size": 1,
+      "backbones_per_shard": 100,
+      "MPNN_model": "protein_mpnn",
+      "MPNN_sequences_per_backbone": 1,
+      "MPNN_temperature": "native default; frozen effective arguments",
+      "RFD3_checkpoint": "retained-artifact/64003fd6f830/rfd3_latest.ckpt",
+      "RFD3_checkpoint_sha256": "9b3f85923e0d51e9453e15cdd2f8c666e7ce096a60577f57d11bbc54ae6d67c1",
+      "MPNN_checkpoint": "retained-artifact/f3799513e2f2/proteinmpnn_v_48_020.pt",
+      "MPNN_checkpoint_sha256": "c9cb4a671d79604111231f8dbfc7c590e06f1197453b7a6854ac6661a642f5bd"
+    },
+    "apnovo": {
+      "sampling_steps": 1000,
+      "generation": "de novo; no starting binder or partial diffusion",
+      "coordinate_mask": "Flexible suites use native atom37OXT masks only at internal residues106-116, all lackingOXT. CPU preflight MUST prove resulting fixed_atom_mask is zero at those11 residues and fixed_seq_mask stays1. No source modifications.",
+      "collector": "Identify designed chain by exact target sequence, not low coordinate-mask B-factors, because target linker is flexible."
+    },
+    "folding": {
+      "method": "Boltz2_exact",
+      "models_per_design": 1,
+      "total_refolds": 12000,
+      "seed": 101,
+      "sampling_steps": 200,
+      "recycles": 3,
+      "diffusion_samples": 1,
+      "MSA_max": 8192,
+      "target": "Same440aa GLP1R",
+      "binder_MSA": "query-only",
+      "before_GPU": "Successful matching CPU MSA generation/validation, native CPU features, cache hashes and cache-only native probe; approved exact-v2 worker only",
+      "no_early_filter": "Every generated sequence refolded; R40/optional contacts and membrane/glycan screening are downstream annotations, not exclusion from refolding"
+    },
+    "resources": {
+      "generation": {
+        "tasks": 120,
+        "count_per_task": 100,
+        "concurrency": 2,
+        "GPU": 1,
+        "CPU": 4,
+        "memory": "64G",
+        "time": "24:00:00",
+        "Nice": 10000
+      },
+      "CPU_preflight": {
+        "CPU": 4,
+        "memory": "48G",
+        "time": "02:00:00"
+      },
+      "CPU_preparation": {
+        "CPU": 16,
+        "memory": "220G",
+        "time": "24:00:00"
+      },
+      "CPU_validation": {
+        "CPU": 8,
+        "memory": "64G",
+        "time": "08:00:00"
+      },
+      "Exact_GPU": {
+        "tasks": 120,
+        "designs_per_task": 100,
+        "concurrency": 2,
+        "GPU": 1,
+        "CPU": 8,
+        "memory": "32G",
+        "time": "08:00:00",
+        "Nice": 10000
+      }
+    },
+    "paid_external_calls": 0,
+    "notification": "Phone at generation scientific acceptance and final Exact acceptance; failures notify; no per-shard success spam"
+  },
+  "publication_transform": "Infrastructure paths normalized; scientific settings, source/weight hashes and version identities retained"
+}

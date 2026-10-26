@@ -62,12 +62,13 @@ def test_update_manifest_excludes_git():
 
 
 def test_update_manifest_excludes_pycache():
-    """Test that __pycache__ directory is excluded."""
+    """Test that __pycache__ and .pytest_cache directories are excluded."""
     import update_manifest
     
     for file_path in update_manifest.files:
         rel_path = file_path.relative_to(update_manifest.root)
         assert '__pycache__' not in rel_path.parts
+        assert '.pytest_cache' not in rel_path.parts
 
 
 def test_update_manifest_excludes_sha256sums():

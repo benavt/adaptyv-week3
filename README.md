@@ -10,7 +10,7 @@ Native selected models, affinity inputs, saved scores, source rankings, generati
 
 All reported affinities are computational predictions. The409-aa and440-aa receptor construct distinction is preserved. This report does not establish binding or receptor activation, and publishing the repository does not submit candidates to the competition.
 
-The fixed release reference is week3-final20-2026-10-25. See the report for the exact scientific-source commit.
+The original scientific release is preserved as week3-final20-2026-10-25. The main branch contains the latest reader edition, with plain-language provenance and no hashes in the report.
 
 ## Verification
 

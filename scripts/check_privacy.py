@@ -19,10 +19,10 @@ from typing import List, Dict, Tuple
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# Patterns to detect potential leaks
+# Patterns to detect potential leaks (all case-insensitive for comprehensive coverage)
 PATTERNS = {
-    'home_path': re.compile(r'/(?:home|Users)/[a-zA-Z0-9_-]+/'),
-    'private_hostname': re.compile(r'\b(?:Pax|mimas|pax|MIMAS)\b'),
+    'home_path': re.compile(r'/(?:home|users)/[a-zA-Z0-9_-]+/', re.IGNORECASE),
+    'private_hostname': re.compile(r'(?:pax|mimas)(?=\W|_|$)', re.IGNORECASE),
     'internal_ip': re.compile(r'\b(?:10\.\d{1,3}\.\d{1,3}\.\d{1,3}|172\.(?:1[6-9]|2[0-9]|3[01])\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3}\.\d{1,3})\b'),
     'api_key_pattern': re.compile(r'(?:api[_-]?key|token|secret|password)\s*[:=]\s*["\']?([a-zA-Z0-9_\-]{20,})["\']?', re.IGNORECASE),
 }

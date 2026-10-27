@@ -51,12 +51,32 @@ def test_private_hostname_pattern():
     
     pattern = check_privacy.PATTERNS['private_hostname']
     
-    # Should match
+    # Should match (all case variations)
     assert pattern.search('Running on Pax server')
     assert pattern.search('Connected to mimas')
+    assert pattern.search('User requested Mimas generation')  # Capitalized
+    assert pattern.search('source: PAX')  # All caps
+    assert pattern.search('system MIMAS')  # All caps
     
     # Should not match
     assert not pattern.search('public-server-01')
+
+
+def test_private_hostname_case_insensitive():
+    """Regression test: verify capitalized private hostnames ARE detected.
+    
+    This test fails against case-sensitive implementation and passes
+    when patterns are properly case-insensitive.
+    """
+    import check_privacy
+    
+    pattern = check_privacy.PATTERNS['private_hostname']
+    
+    # These MUST be detected regardless of case
+    assert pattern.search('Mimas_Folding_Skills'), "Capitalized 'Mimas' must be detected"
+    assert pattern.search('User requested Mimas generation'), "Capitalized 'Mimas' in prose must be detected"
+    assert pattern.search('PAX server'), "All-caps 'PAX' must be detected"
+    assert pattern.search('MIMAS CPU'), "All-caps 'MIMAS' must be detected"
 
 
 def test_internal_ip_pattern():

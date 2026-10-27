@@ -2,7 +2,7 @@
   "original_source_sha256": "d94bb1dabb5a5e075eb49d5c19fb08af5bb755ecd3d49ef6712715da773f8c1a",
   "original_scientific_record": {
     "status": "authorized_execution_preparation",
-    "authorization": "User requested Mimas generation, resource monitoring, phone alerts and Exact refolding of every design; explicitly selected both is_non_loopy values and12,000 total on2026-10-19",
+    "authorization": "User requested compute cluster generation, resource monitoring, phone alerts and Exact refolding of every design; explicitly selected both is_non_loopy values and12,000 total on2026-10-19",
     "source_analysis_run": "campaigns/glp1r-apo-patch/runs/2026-10-19_seed156-accessibility_001",
     "target": {
       "name": "human GLP1R",

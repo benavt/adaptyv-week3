@@ -127,10 +127,18 @@ def test_should_skip_path_function():
     """Test path exclusion logic."""
     import check_privacy
     
-    # Should skip tests directory and scripts containing patterns
-    assert check_privacy.should_skip_path(Path('tests/test_privacy.py'))
+    # Should skip specific files by explicit path
+    assert check_privacy.should_skip_path(Path('scripts/check_privacy.py'))
+    assert check_privacy.should_skip_path(Path('tests/test_check_privacy.py'))
+    
+    # Should skip cache directories
     assert check_privacy.should_skip_path(Path('.git/config'))
     assert check_privacy.should_skip_path(Path('__pycache__/module.pyc'))
+    assert check_privacy.should_skip_path(Path('.pytest_cache/v/cache'))
+    
+    # Should NOT skip other test files or scripts
+    assert not check_privacy.should_skip_path(Path('tests/test_other.py'))
+    assert not check_privacy.should_skip_path(Path('scripts/other_script.py'))
     
     # Should not skip regular files
     assert not check_privacy.should_skip_path(Path('src/main.py'))

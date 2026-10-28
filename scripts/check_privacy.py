@@ -202,7 +202,7 @@ def scan_file(file_path: Path) -> List[Dict]:
             # Skip binary files by extension
             skip_binary_extensions = {
                 '.jpg', '.png', '.gif', '.pyc', '.so', '.dylib', 
-                '.exe', '.bin', '.gz', '.zip', '.tar', '.bz2'
+                '.exe', '.bin', '.gz', '.zip', '.tar', '.bz2', '.npz'
             }
             if file_path.suffix.lower() in skip_binary_extensions:
                 return findings

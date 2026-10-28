@@ -141,7 +141,12 @@ def extract_office_xml(office_path: Path) -> str:
 
 def is_allowlisted(pattern_name: str, file_path: Path, line: str) -> bool:
     """Check if a match is in the allowlist."""
-    rel_path = str(file_path.relative_to(ROOT))
+    try:
+        rel_path = str(file_path.relative_to(ROOT))
+    except ValueError:
+        # Path is not relative to ROOT (e.g., in tests)
+        rel_path = str(file_path)
+    
     for allow_pattern, allow_file, allow_content in ALLOWLIST:
         if pattern_name == allow_pattern:
             if allow_file in rel_path and allow_content in line:
@@ -154,6 +159,13 @@ def scan_content(content: str, file_path: Path, skip_credentials: bool = False) 
     findings = []
     lines = content.splitlines()
     
+    # Get relative path for reporting
+    try:
+        rel_file_path = str(file_path.relative_to(ROOT))
+    except ValueError:
+        # Path is not relative to ROOT (e.g., in tests)
+        rel_file_path = str(file_path)
+    
     for line_num, line in enumerate(lines, 1):
         for pattern_name, pattern in PATTERNS.items():
             # Skip credential checks for biological files
@@ -164,7 +176,7 @@ def scan_content(content: str, file_path: Path, skip_credentials: bool = False) 
             for match in matches:
                 if not is_allowlisted(pattern_name, file_path, line):
                     findings.append({
-                        'file': str(file_path.relative_to(ROOT)),
+                        'file': rel_file_path,
                         'line': line_num,
                         'pattern': pattern_name,
                         'match': match.group(0),

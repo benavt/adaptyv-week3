@@ -367,6 +367,30 @@ def try_decode_as_text(file_path: Path) -> Optional[str]:
         return None
 
 
+def extract_printable_strings(data: bytes, min_length: int = 4) -> str:
+    """Extract printable ASCII strings from binary data (like 'strings' command).
+    
+    Used for scanning image metadata, compiled binaries, etc.
+    """
+    strings = []
+    current = []
+    
+    for byte in data:
+        # Printable ASCII range (space to tilde)
+        if 32 <= byte <= 126:
+            current.append(chr(byte))
+        else:
+            if len(current) >= min_length:
+                strings.append(''.join(current))
+            current = []
+    
+    # Don't forget the last string
+    if len(current) >= min_length:
+        strings.append(''.join(current))
+    
+    return '\n'.join(strings)
+
+
 def scan_file(file_path: Path) -> List[Dict]:
     """Scan a single file for privacy issues."""
     findings = []
@@ -396,10 +420,13 @@ def scan_file(file_path: Path) -> List[Dict]:
             if content:
                 findings.extend(scan_content(content, file_path, skip_credentials))
         
-        # Skip truly opaque binary formats by extension
+        # Handle images and binary files - extract printable ASCII strings
         elif file_path.suffix.lower() in {'.jpg', '.jpeg', '.png', '.gif', '.bmp', '.ico',
                                            '.pyc', '.so', '.dylib', '.dll', '.exe', '.bin'}:
-            return findings
+            data = file_path.read_bytes()
+            ascii_strings = extract_printable_strings(data, min_length=4)
+            if ascii_strings:
+                findings.extend(scan_content(ascii_strings, file_path, skip_credentials))
         
         # For everything else, try to decode as text
         else:

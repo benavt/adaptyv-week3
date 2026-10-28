@@ -294,3 +294,58 @@ def test_manifest_and_checksums_match(repo_root):
                     errors.append(f"Manifest hash mismatch for {entry['path']}")
             
             assert len(errors) == 0, f"Manifest verification failed:\n" + "\n".join(errors)
+
+
+def test_png_metadata_detection():
+    """Test detection of private hostnames in PNG tEXt metadata."""
+    import check_privacy
+    import struct
+    import zlib
+    
+    # Build test hostname from fragments
+    hostname = _build_test_hostname('mim', 'as')
+    
+    # Create minimal PNG with tEXt chunk containing hostname
+    # PNG signature
+    png_data = b'\x89PNG\r\n\x1a\n'
+    
+    # IHDR chunk (1x1 image)
+    ihdr_data = struct.pack('>IIBBBBB', 1, 1, 8, 2, 0, 0, 0)  # 1x1, RGB
+    ihdr_crc = zlib.crc32(b'IHDR' + ihdr_data) & 0xffffffff
+    png_data += struct.pack('>I', len(ihdr_data)) + b'IHDR' + ihdr_data + struct.pack('>I', ihdr_crc)
+    
+    # tEXt chunk with hostname
+    text_keyword = b'Source'
+    text_value = f'Generated on {hostname} cluster'.encode('latin-1')
+    text_data = text_keyword + b'\x00' + text_value
+    text_crc = zlib.crc32(b'tEXt' + text_data) & 0xffffffff
+    png_data += struct.pack('>I', len(text_data)) + b'tEXt' + text_data + struct.pack('>I', text_crc)
+    
+    # IDAT chunk (minimal image data)
+    idat_raw = b'\x00\x00\x00\x00'  # Single row
+    idat_compressed = zlib.compress(idat_raw)
+    idat_crc = zlib.crc32(b'IDAT' + idat_compressed) & 0xffffffff
+    png_data += struct.pack('>I', len(idat_compressed)) + b'IDAT' + idat_compressed + struct.pack('>I', idat_crc)
+    
+    # IEND chunk
+    iend_crc = zlib.crc32(b'IEND') & 0xffffffff
+    png_data += struct.pack('>I', 0) + b'IEND' + struct.pack('>I', iend_crc)
+    
+    # Write PNG and test
+    with tempfile.NamedTemporaryFile(suffix='.png', delete=False) as f:
+        f.write(png_data)
+        temp_path = Path(f.name)
+    
+    try:
+        original_root = check_privacy.ROOT
+        check_privacy.ROOT = temp_path.parent
+        
+        findings = check_privacy.scan_file(temp_path)
+        
+        # Should find the hostname in the metadata
+        assert len(findings) > 0, "PNG metadata hostname not detected"
+        assert findings[0]['pattern'] == 'private_hostname'
+        assert hostname.lower() in findings[0]['match'].lower()
+    finally:
+        check_privacy.ROOT = original_root
+        temp_path.unlink()
